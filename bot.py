@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
-DATA_FILE = "data.json"
+DATA_FILE = os.getenv("DATA_FILE", "data.json")
 
 
 # ---------- Sauvegarde (pour survivre aux redémarrages) ----------
